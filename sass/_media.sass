@@ -1,0 +1,83 @@
+// @media (max-width: 1200px)
+
+@media (max-width: 992px)
+  .container
+    max-width: 650px
+  .navbar
+    margin-bottom: 20px
+    &__menu
+      &-wrapper
+        display: none
+  .hero
+    &__container
+      max-width: 728px
+      background-position: 65% 28%
+      background-size: 175%
+    &__wrapper
+      padding: 13px 0 35px 28px
+    &__title
+      font-size: 48px
+      line-height: 60px
+      margin-bottom: 20px
+    &__label
+      margin-top: 22px
+      margin-bottom: 24px
+    &__text
+      max-width: 400px
+      margin-bottom: 35px
+      font-size: 18px
+      line-height: 32px
+    &__button
+      margin-bottom: 42px
+    &__advantages
+      max-width: 442px
+
+// @media (max-width: 767px)
+
+@media (max-width: 576px)
+  .container
+    max-width: 272px
+  .navbar
+    margin-bottom: 15px
+  .hero
+    &__container
+      min-width: 320px
+      background-position: 80% -1%
+      background-size: 396%
+    &__wrapper
+      padding: 377px 20px 36px
+    &__label
+      min-width: 196px
+      margin: 0 auto 22px
+      padding: 2px 26px
+    &__title
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+    &__text
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      margin-bottom: 25px
+    &__button
+      margin: 0 11px 24px
+      padding: 13px 49px
+      font-size: 16px
+      line-height: 22px
+    &__advantages
+      flex-wrap: wrap
+      justify-content: space-around
+      &-picture
+        width: 24px
+        height: 24px
+      &-item
+        align-items: start
+        justify-content: center
+        &:last-child
+          flex-basis: 100%
+          margin-top: 16px
+
+@media (min-width: 992px)
+  .button
+    &:hover
+      background-color: #b0d2ff
