@@ -7,6 +7,20 @@
       background-position: 65% 28%
     &__text
       max-width: 480px
+  .collections
+    &-grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 230px 230px 1fr
+      grid-column-gap: 30px
+      grid-row-gap: 30px
+      justify-items: stretch
+      align-items: stretch
+      &__item
+        &_big
+          grid-row: span 2
+    &__desc
+      grid-column: 1 / 3
+      grid-row: 3 / 4
 
 @media (max-width: 992px)
   .header
@@ -37,16 +51,17 @@
       background-size: 175%
     &__wrapper
       padding: 13px 0 35px 28px
+      margin-bottom: 80px
     &__title
       font-size: 48px
       line-height: 60px
       margin-bottom: 20px
     &__label
       margin-top: 22px
-      margin-bottom: 24px
+      margin-bottom: 26px
     &__text
       max-width: 400px
-      margin-bottom: 35px
+      margin-bottom: 36px
       font-size: 18px
       line-height: 32px
     &__button
@@ -66,6 +81,14 @@
       background-color: #fff
       cursor: pointer
       outline: none
+  .collections
+    &__container
+      max-width: 672px
+    &__desc
+      padding: 0
+    &__text
+      max-width: 100%
+      margin-bottom: 25px
 
 @media (max-width: 767px)
   .container
@@ -81,12 +104,20 @@
       max-width: 350px
       font-size: 16px
       line-height: 28px
+  .title
+    font-size: 28px
+    line-height: 36px
+  .collections
+    &__text
+      font-size: 16px
+      line-height: 28px
+      text-align: center
 
 @media (max-width: 576px)
   body
     padding-top: 98px
   .container
-    max-width: 272px
+    max-width: 86%
   .navbar
     margin-bottom: 15px
   .hero
@@ -97,6 +128,7 @@
     &__wrapper
       padding: 377px 20px 36px
       text-align: center
+      margin-bottom: 62px
     &__label
       min-width: 196px
       margin: 0 auto 22px
@@ -120,9 +152,36 @@
       &-item
         align-items: start
         justify-content: center
+        margin-right: 4px
         &:last-child
           flex-basis: 100%
           margin-top: 16px
+  .collections
+    &__container
+      min-width: 290px
+    &-grid
+      grid-template-rows: 300px 97px 1fr
+      grid-column-gap: 14px
+      grid-row-gap: 14px
+      justify-items: stretch
+      align-items: stretch
+      &__item
+        &_big
+          grid-column: span 2
+          grid-row: 1 / 2
+    &__desc
+      grid-column: span 2
+      grid-row: 3 / 4
+    &__title
+      text-align: center
+      margin-top: 22px
+      margin-bottom: 20px
+    &__text
+      max-width: 96%
+    &__button
+      display: none 
+    &__image
+      border-radius: 3px
 
 @media (min-width: 992px)
   .button
