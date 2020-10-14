@@ -34,3 +34,56 @@
     line-height: 22px
     color: $blue
     border-radius: 8px
+  &-mobile
+    display: none
+    flex-direction: column
+    position: fixed
+    align-items: start
+    justify-content: start
+    top: 10px
+    left: 8px
+    right: 8px
+    height: 304px
+    bottom: 0
+    padding: 36px 24px
+    background: $white
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+    &__menu
+      display: flex
+      flex-direction: column
+      justify-content: start
+      align-items: start
+      margin: 0
+      padding: 0
+      list-style: none
+    &__item
+      margin-bottom: 20px
+    &__link
+      text-decoration: none
+      color: $dark-blue
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+    &__button
+      min-width: 256px
+      padding: 9px 24px
+      border: 2px solid $blue
+      background-color: $white
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      color: $blue
+      border-radius: 8px
+    &__close
+      position: absolute
+      right: 20px
+      top: 16px
+.menu
+  &-button
+    display: none
+    &__line
+      width: 22px
+      height: 2.2px
+      background: #3A4C66
+      margin-bottom: 5px
+      border-radius: 1px
