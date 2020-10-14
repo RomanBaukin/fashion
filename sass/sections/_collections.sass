@@ -1,0 +1,22 @@
+.collections
+  &-grid
+    display: grid
+    grid-template-columns: 320px 320px 1fr
+    grid-template-rows: 230px 230px
+    grid-column-gap: 30px
+    grid-row-gap: 30px
+    justify-items: stretch
+    align-items: stretch
+    &__item
+      &_big
+        grid-row: span 2
+  &__desc
+      grid-column: 3 / 4
+      grid-row: 1 / 3
+  &__title
+    margin-top: 10px
+    margin-bottom: 24px
+  &__text
+    font-size: 20px
+    line-height: 36px
+    color: $gray
