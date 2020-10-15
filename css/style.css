@@ -1028,6 +1028,35 @@ template {
     max-width: 100%;
     margin-bottom: 25px;
   }
+  .collections-grid {
+    margin-bottom: 79px;
+  }
+  .tranding__container {
+    max-width: 608px;
+  }
+  .tranding-card {
+    -ms-flex-preferred-size: 280px;
+        flex-basis: 280px;
+  }
+  .tranding-card__icon_plus {
+    left: 45%;
+  }
+  .tranding-card__text {
+    top: 51%;
+    left: 12%;
+  }
+  .tranding__title {
+    text-align: center;
+    margin-bottom: 27px;
+  }
+  .tranding__tabs {
+    position: static;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  .tranding__tab:first-child {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1055,6 +1084,10 @@ template {
     max-width: 98%;
     font-size: 16px;
     line-height: 28px;
+  }
+  .tranding-card {
+    -ms-flex-preferred-size: 260px;
+        flex-basis: 260px;
   }
 }
 
@@ -1132,6 +1165,7 @@ template {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    margin-bottom: 59px;
   }
   .collections-grid__item_big {
     grid-column: span 2;
@@ -1154,11 +1188,57 @@ template {
     max-width: 96%;
     text-align: center;
   }
-  .collections__button {
-    display: none;
-  }
   .collections__image {
     border-radius: 3px;
+  }
+  .tranding__container {
+    max-width: 90%;
+  }
+  .tranding-card {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    margin-bottom: 23px;
+  }
+  .tranding-card:last-child {
+    height: 170px;
+  }
+  .tranding-card__wrap {
+    margin-left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .tranding-card__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .tranding-card__cost {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .tranding-card__icon {
+    width: 14px;
+    margin-left: 9px;
+  }
+  .tranding-card__picture {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .tranding-card__img {
+    height: 170px;
+    margin-bottom: 14px;
+  }
+  .tranding__tabs {
+    margin-bottom: 35px;
+  }
+  .tranding__tab {
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 14px;
+  }
+  .tranding__tab_active {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 

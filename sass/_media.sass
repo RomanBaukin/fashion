@@ -89,6 +89,29 @@
     &__text
       max-width: 100%
       margin-bottom: 25px
+    &-grid
+      margin-bottom: 79px
+  .tranding
+    &__container
+      max-width: 608px
+    &-card
+      flex-basis: 280px
+      &__icon
+        &_plus
+          left: 45%
+      &__text
+        top: 51%
+        left: 12%
+    &__title
+      text-align: center
+      margin-bottom: 27px
+    &__tabs
+      position: static
+      text-align: center
+      margin-bottom: 55px
+    &__tab
+      &:first-child
+        margin-left: 0
 
 @media (max-width: 767px)
   .container
@@ -112,6 +135,9 @@
       max-width: 98%
       font-size: 16px
       line-height: 28px
+  .tranding
+    &-card
+      flex-basis: 260px
 
 @media (max-width: 576px)
   body
@@ -165,6 +191,7 @@
       grid-row-gap: 14px
       justify-items: stretch
       align-items: stretch
+      margin-bottom: 59px
       &__item
         &_big
           grid-column: span 2
@@ -179,10 +206,42 @@
     &__text
       max-width: 96%
       text-align: center
-    &__button
-      display: none
     &__image
       border-radius: 3px
+  .tranding
+    &__container
+      max-width: 90%
+    &-card
+      flex-basis: 48%
+      margin-bottom: 23px
+      &:last-child
+        height: 170px
+      &__wrap
+        margin-left: 0
+        justify-content: start
+      &__title
+        font-size: 16px
+        line-height: 20px
+      &__cost
+        font-size: 14px
+        line-height: 24px
+      &__icon
+        width: 14px
+        margin-left: 9px
+      &__picture
+        transform: none
+      &__img
+        height: 170px
+        margin-bottom: 14px
+    &__tabs
+      margin-bottom: 35px
+    &__tab
+      font-size: 16px
+      line-height: 22px
+      margin-left: 14px
+      &_active
+        font-size: 16px
+        line-height: 22px
 
 @media (min-width: 992px)
   .button
