@@ -833,6 +833,7 @@ template {
   letter-spacing: 0.2px;
   color: #183B56;
   margin: 0 0 3px;
+  cursor: pointer;
 }
 
 .tranding-card__cost {
@@ -846,6 +847,7 @@ template {
   background-color: #1565D8;
   height: 350px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .tranding-card__img {
@@ -853,6 +855,7 @@ template {
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .tranding-card__picture {
