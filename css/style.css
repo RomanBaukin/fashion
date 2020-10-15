@@ -32,8 +32,6 @@
   src: url("../fonts/HKGrotesk-Regular.woff") format("woff"), url("../fonts/HKGrotesk-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  -webkit-font-feature-settings: "locl" 0;
-          font-feature-settings: "locl" 0;
   font-display: swap;
 }
 
@@ -42,8 +40,6 @@
   src: url("../fonts/HKGrotesk-Medium.woff") format("woff"), url("../fonts/HKGrotesk-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
-  -webkit-font-feature-settings: "locl" 0;
-          font-feature-settings: "locl" 0;
   font-display: swap;
 }
 
@@ -52,8 +48,6 @@
   src: url("../fonts/HKGrotesk-Bold.woff") format("woff"), url("../fonts/HKGrotesk-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  -webkit-font-feature-settings: "locl" 0;
-          font-feature-settings: "locl" 0;
   font-display: swap;
 }
 
@@ -1212,7 +1206,7 @@ template {
             justify-content: start;
   }
   .tranding-card__title {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
   }
   .tranding-card__cost {
@@ -1223,6 +1217,11 @@ template {
     width: 14px;
     margin-left: 9px;
   }
+  .tranding-card__icon_plus {
+    width: 23px;
+    top: 26%;
+    left: 41%;
+  }
   .tranding-card__picture {
     -webkit-transform: none;
             transform: none;
@@ -1230,6 +1229,11 @@ template {
   .tranding-card__img {
     height: 170px;
     margin-bottom: 14px;
+  }
+  .tranding-card__text {
+    font-size: 17px;
+    line-height: 20px;
+    left: -2%;
   }
   .tranding__tabs {
     margin-bottom: 35px;
