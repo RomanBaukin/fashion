@@ -1,0 +1,95 @@
+.tranding
+  &__container
+    position: relative
+    max-width: 1135px
+    margin: auto
+  &__tabs
+    position: absolute
+    top: 16px
+    right: 3px
+  &__tab
+    margin-left: 35px
+    font-size: 18px
+    line-height: 25px
+    color: $gray
+    cursor: pointer
+    &_active
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: $dark-blue
+      cursor: pointer
+  &__flex
+    display: none
+    &_active
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+  &-card
+    flex-basis: 260px
+    margin-bottom: 50px
+    &__wrap
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      margin-left: 10px
+      width: 93%
+    &__title
+      flex-basis: 100%
+      font-family: 'HKgrotesk', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $dark-blue
+      margin: 0 0 3px
+    &__cost
+      font-size: 20px
+      line-height: 36px
+      color: $gray
+    &:last-child
+      position: relative
+      background-color: $blue
+      height: 350px
+      border-radius: 8px
+    &__img
+      height: 350px
+      margin-bottom: 20px
+      overflow: hidden
+      border-radius: 8px
+    &__picture
+      object-fit: cover
+      &_02
+        transform: scale(2, 2) translate(12px, 88px)
+      &_03
+        transform: scale(1.5, 1.5) translate(-4px, 50px)
+      &_04
+        transform: scale(1.45, 1.45) translate(-3px, -14px)
+      &_05
+        // transform: scale(1.15, 1.15) translate(6px, 26px)
+      &_06
+        // transform: scale(2.2, 2.2) translate(12px, 97px)
+      &_07
+        // transform: scale(2, 2) translate(3px, 101px)
+    &__icon
+      cursor: pointer
+      &_plus
+        position: absolute
+        top: 35%
+        left: 43%
+        cursor: pointer
+    &__text
+      position: absolute
+      top: 52%
+      left: 8%
+      font-family: 'HKgrotesk', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      text-align: center
+      letter-spacing: 0.2px
+      color: $white
+  &__title
+    margin-bottom: 48px

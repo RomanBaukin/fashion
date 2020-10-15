@@ -11,4 +11,16 @@ $(document).ready(function () {
   $(document).keyup(function (e) {
     if (e.keyCode === 27) $(".navbar-mobile__close").click();
   });
+
+  // Табы
+  var tabsItem = $('.tranding__tab');
+  var contentItem = $('.tranding__flex');
+
+  tabsItem.on('click', function (event) {
+    var activeContent = $(this).attr("data-target");
+    tabsItem.removeClass('tranding__tab_active')
+    contentItem.removeClass('tranding__flex_active');
+    $(activeContent).addClass('tranding__flex_active');
+    $(this).addClass('tranding__tab_active');
+  })
 });
