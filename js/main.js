@@ -32,6 +32,20 @@ $(document).ready(function () {
     pagination: {
       el: '.swiper-pagination',
     },
+    autoplay: {
+      delay: 7000,
+    },
+    on: {
+      init() {
+        this.el.addEventListener('mouseenter', () => {
+          this.autoplay.stop();
+        });
+
+        this.el.addEventListener('mouseleave', () => {
+          this.autoplay.start();
+        });
+      }
+    },
   })
   var storiesSlider = new Swiper('.stories__slider', {
     loop: true,
