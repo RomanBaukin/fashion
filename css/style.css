@@ -894,7 +894,7 @@ template {
 }
 
 .tranding-card__icon_plus {
-  margin: 0 auto 10px;
+  margin: 18px auto 28px;
   cursor: pointer;
 }
 
@@ -1477,9 +1477,8 @@ template {
     margin-left: 9px;
   }
   .tranding-card__icon_plus {
+    margin: 26px auto 19px;
     width: 23px;
-    top: 26%;
-    left: 41%;
   }
   .tranding-card__picture {
     -webkit-transform: none;
@@ -1492,7 +1491,6 @@ template {
   .tranding-card__text {
     font-size: 17px;
     line-height: 20px;
-    left: -2%;
   }
   .tranding__tabs {
     margin-bottom: 35px;
