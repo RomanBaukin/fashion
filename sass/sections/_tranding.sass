@@ -25,10 +25,16 @@
     &_active
       display: flex
       flex-wrap: wrap
-      justify-content: space-between
+      justify-content: start
   &-card
     flex-basis: 260px
     margin-bottom: 50px
+    margin-right: 13px
+    margin-left: 13px
+    &:first-child
+      margin-left: 0
+    &:nth-child(5n+5)
+      margin-left: 0
     &__wrap
       display: flex
       justify-content: space-between
