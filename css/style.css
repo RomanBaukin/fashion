@@ -765,7 +765,7 @@ template {
   position: relative;
   max-width: 1135px;
   margin: auto;
-  margin-bottom: 145px;
+  margin-bottom: 155px;
 }
 
 .tranding__tabs {
@@ -916,7 +916,7 @@ template {
 }
 
 .comments__quote {
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 .comments__text {
@@ -926,8 +926,8 @@ template {
   font-size: 20px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.133333px;
   color: #183B56;
+  margin-bottom: 29px;
 }
 
 .comments__title {
@@ -939,17 +939,18 @@ template {
   text-align: center;
   letter-spacing: 0.2px;
   color: #183B56;
-  margin-bottom: 53px;
+  margin-top: 0;
+  margin-bottom: 67px;
 }
 
 .comments__line {
   border: 1px solid #E5EAF4;
-  margin-bottom: 130px;
+  margin-bottom: 106px;
 }
 
 .swiper-container {
   max-width: 800px;
-  margin: 0 auto 80px;
+  margin: 0 auto 67px;
 }
 
 .swiper-pagination-bullet {
@@ -983,12 +984,13 @@ template {
 }
 
 .stories__description {
-  max-width: 392px;
+  max-width: 390px;
+  margin-right: 84px;
 }
 
 .stories__label {
-  max-width: 175px;
-  margin-top: 17px;
+  max-width: 101px;
+  margin-top: 13px;
   margin-bottom: 31px;
   padding: 6px 15px;
   margin-bottom: 28px;
@@ -999,7 +1001,7 @@ template {
 }
 
 .stories__text {
-  margin: 0 0 42px;
+  margin: 0 0 48px;
   font-size: 20px;
   line-height: 36px;
   color: #5A7184;
