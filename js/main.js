@@ -25,12 +25,22 @@ $(document).ready(function () {
   })
 
   // Слайдер
-  var mySwiper = new Swiper('.swiper-container', {
+  var commentsSlider = new Swiper('.comments__slider', {
     loop: true,
 
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     },
+  })
+  var storiesSlider = new Swiper('.stories__slider', {
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.stories__button_next',
+      prevEl: '.stories__button_prev',
+    },
+
   })
 });

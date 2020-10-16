@@ -975,6 +975,15 @@ template {
 .stories__container {
   max-width: 1150px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .stories__description {
@@ -1000,8 +1009,59 @@ template {
   color: #5A7184;
 }
 
-.slider-button {
-  margin-right: 22px;
+.stories__button {
+  margin-right: 20px;
+}
+
+.stories__slider {
+  max-width: 650px;
+}
+
+.stories__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stories-item {
+  max-width: 322px;
+  margin-right: 28px;
+  position: relative;
+}
+
+.stories-item__text {
+  position: absolute;
+  background: #FAFDFF;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 10;
+}
+
+.stories-item__image {
+  width: 312px;
+  height: 317px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.stories-item__picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.stories-item__title {
+  max-width: 260px;
+  font-family: 'HKgrotesk', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #183B56;
 }
 
 @media (max-width: 1200px) {
@@ -1364,6 +1424,12 @@ template {
   }
   .tranding__tab:hover {
     color: #b0d2ff;
+  }
+  .stories__button:hover path {
+    fill: #183B56;
+  }
+  .stories__button:hover rect {
+    stroke: #183B56;
   }
 }
 /*# sourceMappingURL=style.css.map */

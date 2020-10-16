@@ -2,6 +2,9 @@
   &__container
     max-width: 1150px
     margin: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
   &__description
     max-width: 392px
   &__label
@@ -17,6 +20,38 @@
     font-size: 20px
     line-height: 36px
     color: #5A7184
-.slider
-  &-button
-    margin-right: 22px
+  &__button
+    margin-right: 20px
+  &__slider
+    max-width: 650px
+  &__slide
+    display: flex
+  &-item
+    max-width: 322px
+    margin-right: 28px
+    position: relative
+    &__text
+      position: absolute
+      background: #FAFDFF
+      bottom: 0
+      left: 0
+      padding: 20px
+      z-index: 10
+    &__image
+      width: 312px
+      height: 317px
+      border-radius: 8px 8px 0 0
+      overflow: hidden
+      cursor: pointer
+    &__picture
+      object-fit: cover
+      transform: scale(1.1, 1.1)
+    &__title
+      max-width: 260px
+      font-family: 'HKgrotesk', sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $dark-blue

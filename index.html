@@ -401,7 +401,7 @@
     <!-- /.tranding -->
     <section class="comments">
       <div class="container comments__container">
-        <div class="swiper-container">
+        <div class="swiper-container comments__slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -461,13 +461,55 @@
             Ознакомьтесь с нашим рассказом
             о моде. Написано нашим дизайнером и специалистом.
           </p>
-          <div class="slider-buttons stories__buttons">
-            <img src="img/svg/button-left.svg" alt="Кнопка слайдера: стрелка влево" class="slider-button">
-            <img src="img/svg/button-right.svg" alt="Кнопка слайдера: стрелка вправо" class="slider-button">
-          </div>
-          <!-- /.stories__buttons -->
+          <svg class="stories__button stories__button_prev" width="54" height="56" viewBox="0 0 54 56" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="52" height="54" rx="26" stroke="#959EAD" stroke-width="2" />
+            <path
+              d="M27.3169 34.9375C27.6294 34.625 27.5981 34.1562 27.3169 33.8438L23.5356 30.25H32.5356C32.9419 30.25 33.2856 29.9375 33.2856 29.5V28.5C33.2856 28.0938 32.9419 27.75 32.5356 27.75H23.5356L27.3169 24.1875C27.5981 23.875 27.6294 23.4062 27.3169 23.0938L26.6294 22.4062C26.3481 22.125 25.8481 22.125 25.5669 22.4062L19.5044 28.5C19.1919 28.7812 19.1919 29.25 19.5044 29.5312L25.5669 35.625C25.8481 35.9062 26.3169 35.9062 26.6294 35.625L27.3169 34.9375Z"
+              fill="#959EAD" />
+          </svg>
+          <svg class="stories__button stories__button_next" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="54" height="54" rx="27" stroke="#959EAD" stroke-width="2" />
+            <path
+              d="M26.9375 23.0938C26.625 23.4062 26.6562 23.875 26.9375 24.1875L30.7188 27.75H21.75C21.3125 27.75 21 28.0938 21 28.5V29.5C21 29.9375 21.3125 30.25 21.75 30.25H30.7188L26.9375 33.8438C26.6562 34.1562 26.6562 34.625 26.9375 34.9375L27.625 35.625C27.9375 35.9062 28.4062 35.9062 28.6875 35.625L34.7812 29.5312C35.0625 29.25 35.0625 28.7812 34.7812 28.4688L28.6875 22.4062C28.4062 22.125 27.9375 22.125 27.625 22.4062L26.9375 23.0938Z"
+              fill="#959EAD" />
+          </svg>
         </div>
         <!-- /.stories__description -->
+        <!-- Slider main container -->
+        <div class="swiper-container stories__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide stories__slide">
+              <div class="stories-item">
+                <div class="stories-item__image">
+                  <img src="img/stories-01.jpg" alt="Картинка для истории" class="stories-item__picture">
+                </div>
+                <!-- /.stories__image -->
+                <div class="stories-item__text">
+                  <h3 class="stories-item__title">Mix & Match Style 01: повседневный и формальный стиль</h3>
+                  <a href="#" class="stories-item__link">Читать далее</a>
+                </div>
+                <!-- /.stories-item__text -->
+              </div>
+              <!-- /.stories__item -->
+              <div class="stories-item">
+                <div class="stories-item__image">
+                  <img src="img/stories-02.jpg" alt="Картинка для истории" class="stories-item__picture">
+                </div>
+                <!-- /.stories__image -->
+                <div class="stories-item__text">
+                  <h3 class="stories-item__title">Лайфхак: Купите одежду Thrifft на воскресном рынке</h3>
+                  <a href="#" class="stories-item__link">Читать далее</a>
+                </div>
+                <!-- /.stories-item__text -->
+              </div>
+              <!-- /.stories__item -->
+            </div>
+            <!-- /.stories__slide -->
+          </div>
+        </div>
       </div>
       <!-- /.stories__container -->
     </section>
