@@ -795,30 +795,16 @@ template {
 }
 
 .tranding__flex_active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-.tranding-card {
-  -ms-flex-preferred-size: 260px;
-      flex-basis: 260px;
-  margin-bottom: 50px;
-  margin-right: 13px;
-  margin-left: 13px;
-}
-
-.tranding-card:first-child {
-  margin-left: 0;
-}
-
-.tranding-card:nth-child(5n+5) {
-  margin-left: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 260px  260px 260px 260px;
+      grid-template-columns: 260px  260px 260px 260px;
+  grid-column-gap: 32px;
+  grid-row-gap: 50px;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .tranding-card__wrap {
@@ -1117,6 +1103,10 @@ template {
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
   }
+  .tranding__flex_active {
+    -ms-grid-columns: 260px  260px 260px;
+        grid-template-columns: 260px  260px 260px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1213,9 +1203,12 @@ template {
   .tranding__container {
     max-width: 608px;
   }
+  .tranding__flex_active {
+    -ms-grid-columns: 280px  280px;
+        grid-template-columns: 280px  280px;
+  }
   .tranding-card {
-    -ms-flex-preferred-size: 280px;
-        flex-basis: 280px;
+    width: 280px;
   }
   .tranding-card__icon_plus {
     left: 45%;
@@ -1266,8 +1259,11 @@ template {
     line-height: 28px;
   }
   .tranding-card {
-    -ms-flex-preferred-size: 260px;
-        flex-basis: 260px;
+    width: 260px;
+  }
+  .tranding__flex_active {
+    -ms-grid-columns: 260px  260px;
+        grid-template-columns: 260px  260px;
   }
 }
 
@@ -1374,10 +1370,14 @@ template {
   .tranding__container {
     max-width: 90%;
   }
+  .tranding__flex_active {
+    -ms-grid-columns: 48% 48%;
+        grid-template-columns: 48% 48%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+  }
   .tranding-card {
-    -ms-flex-preferred-size: 48%;
-        flex-basis: 48%;
-    margin-bottom: 23px;
+    width: 100%;
   }
   .tranding-card:last-child {
     height: 170px;

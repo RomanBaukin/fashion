@@ -23,18 +23,21 @@
   &__flex
     display: none
     &_active
-      display: flex
-      flex-wrap: wrap
-      justify-content: start
+      display: grid
+      grid-template-columns: 260px  260px 260px 260px
+      grid-column-gap: 32px
+      grid-row-gap: 50px
+      justify-items: stretch
+      align-items: stretch
   &-card
-    flex-basis: 260px
-    margin-bottom: 50px
-    margin-right: 13px
-    margin-left: 13px
-    &:first-child
-      margin-left: 0
-    &:nth-child(5n+5)
-      margin-left: 0
+    // flex-basis: 260px
+    // margin-bottom: 50px
+    // margin-right: 13px
+    // margin-left: 13px
+    // &:first-child
+    //   margin-left: 0
+    // &:nth-child(5n+5)
+    //   margin-left: 0
     &__wrap
       display: flex
       justify-content: space-between

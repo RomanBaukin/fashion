@@ -21,7 +21,10 @@
     &__desc
       grid-column: 1 / 3
       grid-row: 3 / 4
-
+  .tranding
+    &__flex
+      &_active
+        grid-template-columns: 260px  260px 260px
 @media (max-width: 992px)
   .header
     &__mobile
@@ -94,8 +97,11 @@
   .tranding
     &__container
       max-width: 608px
+    &__flex
+      &_active
+        grid-template-columns: 280px  280px
     &-card
-      flex-basis: 280px
+      width: 280px
       &__icon
         &_plus
           left: 45%
@@ -138,7 +144,10 @@
       line-height: 28px
   .tranding
     &-card
-      flex-basis: 260px
+      width: 260px
+    &__flex
+      &_active
+        grid-template-columns: 260px  260px
 
 @media (max-width: 576px)
   body
@@ -212,9 +221,13 @@
   .tranding
     &__container
       max-width: 90%
+    &__flex
+      &_active
+        grid-template-columns: 48% 48%
+        grid-column-gap: 10px
+        grid-row-gap: 20px
     &-card
-      flex-basis: 48%
-      margin-bottom: 23px
+      width: 100%
       &:last-child
         height: 170px
       &__wrap
