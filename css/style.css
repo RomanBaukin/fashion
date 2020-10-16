@@ -799,8 +799,9 @@ template {
   display: grid;
   -ms-grid-columns: 260px  260px 260px 260px;
       grid-template-columns: 260px  260px 260px 260px;
-  grid-column-gap: 32px;
-  grid-row-gap: 50px;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+  row-gap: 50px;
   justify-items: stretch;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -841,7 +842,19 @@ template {
 }
 
 .tranding-card:last-child {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #1565D8;
   height: 350px;
   border-radius: 8px;
@@ -881,16 +894,11 @@ template {
 }
 
 .tranding-card__icon_plus {
-  position: absolute;
-  top: 35%;
-  left: 43%;
+  margin: 0 auto 10px;
   cursor: pointer;
 }
 
 .tranding-card__text {
-  position: absolute;
-  top: 52%;
-  left: 8%;
   font-family: 'HKgrotesk', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1204,10 +1212,13 @@ template {
   }
   .tranding__container {
     max-width: 608px;
+    margin-bottom: 87px;
   }
   .tranding__flex_active {
     -ms-grid-columns: 280px  280px;
         grid-template-columns: 280px  280px;
+    -webkit-column-gap: 47px;
+            column-gap: 47px;
   }
   .tranding-card {
     width: 280px;
@@ -1230,6 +1241,67 @@ template {
   }
   .tranding__tab:first-child {
     margin-left: 0;
+  }
+  .comments__card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .comments__quote {
+    margin-bottom: 18px;
+  }
+  .comments__text {
+    max-width: 626px;
+    max-height: 210px;
+    overflow: hidden;
+  }
+  .comments__title {
+    margin-bottom: 47px;
+  }
+  .comments__line {
+    margin-bottom: 77px;
+  }
+  .stories__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .stories__description {
+    max-width: 520px;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 32px;
+  }
+  .stories__label {
+    margin: 0 auto 24px;
+  }
+  .stories__title {
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  .stories__text {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .stories__buttons {
+    margin: auto;
+  }
+  .stories__button {
+    margin: 0 8px 0;
+    width: 60px;
   }
 }
 
@@ -1371,12 +1443,14 @@ template {
   }
   .tranding__container {
     max-width: 90%;
+    margin-bottom: 54px;
   }
   .tranding__flex_active {
     -ms-grid-columns: 48% 48%;
         grid-template-columns: 48% 48%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+    row-gap: 22px;
   }
   .tranding-card {
     width: 100%;
@@ -1431,6 +1505,59 @@ template {
   .tranding__tab_active {
     font-size: 16px;
     line-height: 22px;
+  }
+  .comments__quote {
+    width: 70px;
+    height: 81px;
+    margin-bottom: 9px;
+  }
+  .comments__text {
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 36px;
+    max-height: 350px;
+  }
+  .comments__title {
+    width: 150px;
+    margin-bottom: 19px;
+  }
+  .comments__slider {
+    margin-bottom: 51px;
+  }
+  .comments__line {
+    margin-bottom: 42px;
+  }
+  .stories__container {
+    max-width: 90%;
+  }
+  .stories__this {
+    display: none;
+  }
+  .stories__label {
+    margin-bottom: 20px;
+  }
+  .stories__text {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 31px;
+  }
+  .stories__button {
+    margin: 0 7px 0;
+    width: 46px;
+  }
+  .stories__description {
+    margin-bottom: 19px;
+  }
+  .stories__slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stories-item__image {
+    width: 280px;
+    height: 277px;
   }
 }
 

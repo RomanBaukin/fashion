@@ -97,9 +97,11 @@
   .tranding
     &__container
       max-width: 608px
+      margin-bottom: 87px
     &__flex
       &_active
         grid-template-columns: 280px  280px
+        column-gap: 47px
     &-card
       width: 280px
       &__icon
@@ -118,6 +120,43 @@
     &__tab
       &:first-child
         margin-left: 0
+  .comments
+    &__card
+      align-items: center
+    &__quote
+      margin-bottom: 18px
+    &__text
+      max-width: 626px
+      max-height: 210px
+      overflow: hidden
+    &__title
+      margin-bottom: 47px
+    &__line
+      margin-bottom: 77px
+  .stories
+    &__container
+      flex-direction: column
+      justify-content: center
+    &__description
+      max-width: 520px
+      margin-right: 0
+      display: flex
+      flex-direction: column
+      justify-content: center
+      margin-bottom: 32px
+    &__label
+      margin: 0 auto 24px
+    &__title
+      text-align: center
+      margin-bottom: 17px
+    &__text
+      text-align: center
+      margin-bottom: 35px
+    &__buttons
+      margin: auto
+    &__button
+      margin: 0 8px 0
+      width: 60px
 
 @media (max-width: 767px)
   .container
@@ -221,11 +260,12 @@
   .tranding
     &__container
       max-width: 90%
+      margin-bottom: 54px
     &__flex
       &_active
         grid-template-columns: 48% 48%
-        grid-column-gap: 10px
-        grid-row-gap: 20px
+        column-gap: 10px
+        row-gap: 22px
     &-card
       width: 100%
       &:last-child
@@ -264,6 +304,46 @@
       &_active
         font-size: 16px
         line-height: 22px
+  .comments
+    &__quote
+      width: 70px
+      height: 81px
+      margin-bottom: 9px
+    &__text
+      margin-top: 0
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 36px
+      max-height: 350px
+    &__title
+      width: 150px
+      margin-bottom: 19px
+    &__slider
+      margin-bottom: 51px
+    &__line
+      margin-bottom: 42px
+  .stories
+    &__container
+      max-width: 90%
+    &__this
+      display: none
+    &__label
+      margin-bottom: 20px
+    &__text
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 31px
+    &__button
+      margin: 0 7px 0
+      width: 46px
+    &__description
+      margin-bottom: 19px
+    &__slide
+      flex-direction: column
+    &-item
+      &__image
+        width: 280px
+        height: 277px
 
 @media (min-width: 992px)
   .button
