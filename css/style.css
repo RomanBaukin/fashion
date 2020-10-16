@@ -32,6 +32,8 @@
   src: url("../fonts/HKGrotesk-Regular.woff") format("woff"), url("../fonts/HKGrotesk-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   font-display: swap;
 }
 
@@ -40,6 +42,8 @@
   src: url("../fonts/HKGrotesk-Medium.woff") format("woff"), url("../fonts/HKGrotesk-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   font-display: swap;
 }
 
@@ -48,6 +52,8 @@
   src: url("../fonts/HKGrotesk-Bold.woff") format("woff"), url("../fonts/HKGrotesk-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   font-display: swap;
 }
 
@@ -758,6 +764,7 @@ template {
   position: relative;
   max-width: 1135px;
   margin: auto;
+  margin-bottom: 145px;
 }
 
 .tranding__tabs {
@@ -899,6 +906,44 @@ template {
 
 .tranding__title {
   margin-bottom: 48px;
+}
+
+.comments__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+}
+
+.comments__quote {
+  margin-bottom: 24px;
+}
+
+.comments__text {
+  font-family: 'HKgrotesk', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.133333px;
+  color: #183B56;
+}
+
+.comments__title {
+  font-family: 'HKgrotesk', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #183B56;
 }
 
 @media (max-width: 1200px) {
@@ -1206,7 +1251,7 @@ template {
             justify-content: start;
   }
   .tranding-card__title {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
   }
   .tranding-card__cost {
