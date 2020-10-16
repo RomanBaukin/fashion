@@ -1,7 +1,7 @@
 .stories
   &__container
     max-width: 1150px
-    margin: auto
+    margin: 0 auto 140px
     display: flex
     justify-content: space-between
     align-items: center
@@ -22,6 +22,7 @@
     color: #5A7184
   &__button
     margin-right: 20px
+    cursor: pointer
   &__slider
     max-width: 650px
   &__slide
@@ -30,6 +31,7 @@
     max-width: 322px
     margin-right: 28px
     position: relative
+    cursor: pointer
     &__text
       position: absolute
       background: #FAFDFF
@@ -42,7 +44,6 @@
       height: 317px
       border-radius: 8px 8px 0 0
       overflow: hidden
-      cursor: pointer
     &__picture
       object-fit: cover
       transform: scale(1.1, 1.1)
@@ -55,3 +56,9 @@
       line-height: 32px
       letter-spacing: 0.2px
       color: $dark-blue
+    &__link
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: #1565D8
+      text-decoration: none

@@ -974,7 +974,7 @@ template {
 
 .stories__container {
   max-width: 1150px;
-  margin: auto;
+  margin: 0 auto 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1011,6 +1011,7 @@ template {
 
 .stories__button {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .stories__slider {
@@ -1027,6 +1028,7 @@ template {
   max-width: 322px;
   margin-right: 28px;
   position: relative;
+  cursor: pointer;
 }
 
 .stories-item__text {
@@ -1043,7 +1045,6 @@ template {
   height: 317px;
   border-radius: 8px 8px 0 0;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .stories-item__picture {
@@ -1062,6 +1063,14 @@ template {
   line-height: 32px;
   letter-spacing: 0.2px;
   color: #183B56;
+}
+
+.stories-item__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1565D8;
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
