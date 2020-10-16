@@ -916,8 +916,6 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 800px;
-  margin: auto;
 }
 
 .comments__quote {
@@ -944,6 +942,28 @@ template {
   text-align: center;
   letter-spacing: 0.2px;
   color: #183B56;
+  margin-bottom: 53px;
+}
+
+.swiper-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background: #B3BAC5;
+  border-radius: 2.5px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #183B56;
+  border-radius: 2.5px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 8px;
 }
 
 @media (max-width: 1200px) {
