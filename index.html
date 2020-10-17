@@ -34,7 +34,7 @@
                 <a href="#" class="navbar__link">Контакты</a>
               </li>
             </ul>
-            <button class="button navbar__button">Войти</button>
+            <button data-toggle="modal" class="button navbar__button">Войти</button>
           </div>
           <!-- /.navbar__menu-wrapper -->
           <button class="menu-button">
@@ -60,7 +60,7 @@
                 <a href="#" class="navbar-mobile__link">Контакты</a>
               </li>
             </ul>
-            <button class="button navbar-mobile__button">Войти</button>
+            <button data-toggle="modal" class="button navbar-mobile__button">Войти</button>
             <a href="#" class="navbar-mobile__close">
               <img src="img/svg/close.svg" alt="Иконка: кнопка закрыть" />
             </a>
@@ -598,6 +598,20 @@
       </div>
       <!-- /.container footer__container -->
     </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/svg/close.svg" alt="Icon: close" />
+        </a>
+        <input type="text" class="modal__input" placeholder="Логин">
+        <input type="text" class="modal__input" placeholder="Пароль">
+        <button class="button modal__button">Войти</button> 
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

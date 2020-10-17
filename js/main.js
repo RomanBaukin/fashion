@@ -8,9 +8,9 @@ $(document).ready(function () {
   closeButton.on("click", function () {
     document.querySelector(".navbar-mobile__visible").classList.toggle("navbar-mobile__visible");
   });
-  $(document).keyup(function (e) {
-    if (e.keyCode === 27) $(".navbar-mobile__close").click();
-  });
+  // $(document).keyup(function (e) {
+  //   if (e.keyCode === 27) $(".navbar-mobile__close").click();
+  // });
 
   // Табы
   var tabsItem = $('.tranding__tab');
@@ -72,4 +72,30 @@ $(document).ready(function () {
       },
     });
   });
+
+  // Модальное окно
+  var modalButton = $("[data-toggle=modal]");
+  var closeModalButton = $(".modal__close");
+  modalButton.on("click", openModal);
+  closeModalButton.on("click", closeModal);
+
+  $(document).keyup(function (e) {
+    if (e.keyCode === 27) $(".modal__close").click();
+  });
+
+  function openModal() {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.addClass("modal__overlay_visible");
+    modalDialog.addClass("modal__dialog_visible");
+    document.querySelector(".navbar-mobile__visible").classList.remove("navbar-mobile__visible");
+  }
+
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay_visible");
+    modalDialog.removeClass("modal__dialog_visible");
+  }
 });

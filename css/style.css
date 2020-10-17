@@ -1249,6 +1249,80 @@ template {
   margin-right: 5px;
 }
 
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  background-color: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog_visible {
+  visibility: visible;
+  opacity: 1;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 15px;
+  border: 1px solid #1565D8;
+  border-radius: 8px;
+  padding: 0 10px 0;
+}
+
+.modal__button {
+  padding: 13px 24px;
+  border: 2px solid #1565D8;
+  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1565D8;
+  border-radius: 8px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 860px;
