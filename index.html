@@ -527,7 +527,7 @@
             <p class="newsletter__text">Напишите свой адрес электронной почты. Мы&nbsp;будем присылать вам новости из мира моды.</p>
           </div>
           <!-- /.newsletter__description -->
-          <form action="send.php" method="POST" name="email" class="newsletter__subscribe">
+          <form action="send.php" method="POST" class="form newsletter__subscribe">
             <img src="img/svg/email.svg" alt="Иконка: почтовый конверт" class="newsletter__icon">
             <input type="email" name="email" class="newsletter__input" placeholder="Ваш Email" required>
             <button class="newsletter__button button" type="submit">Подписаться</button>
@@ -541,6 +541,8 @@
     <!-- /.newsletter -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

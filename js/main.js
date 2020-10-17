@@ -55,6 +55,21 @@ $(document).ready(function () {
       nextEl: '.stories__button_next',
       prevEl: '.stories__button_prev',
     },
-
   })
+
+  // Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "The name must be at least two letters",
+        },
+        email: {
+          required: "Please enter your email address",
+          email: "Format email address: name@domain.com",
+        },
+      },
+    });
+  });
 });
