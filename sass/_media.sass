@@ -183,6 +183,13 @@
       margin-bottom: 10px
   .newsletter
     padding: 66px 0 80px
+    &__background
+      &_top-left
+        top: -18px
+        left: -40px
+      &_right-bottom
+        right: -117px
+        bottom: -252px
     &__title
       margin-top: 4px
     &__text
@@ -224,6 +231,13 @@
       &_active
         grid-template-columns: 260px  260px
   .newsletter
+    &__background
+      &_top-left
+        display: none
+      &_right-bottom
+        transform: rotate(180deg)
+        top: 0px
+        left: -187px
     &__title
       font-size: 48px
       line-height: 60px
