@@ -108,6 +108,20 @@ img {
   margin: 0;
 }
 
+.thanks__button {
+  padding: 15px 40px;
+  margin-bottom: 49px;
+  background: #183B56;
+  border-radius: 8px;
+  border: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -953,7 +967,7 @@ template {
 
 .comments__line {
   border: 1px solid #E5EAF4;
-  margin-bottom: 106px;
+  margin-bottom: 129px;
 }
 
 .swiper-container {
@@ -979,16 +993,13 @@ template {
 
 .stories__container {
   max-width: 1150px;
-  margin: 0 auto 140px;
+  margin: 0 auto 68px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .stories__description {
@@ -998,7 +1009,7 @@ template {
 
 .stories__label {
   max-width: 101px;
-  margin-top: 13px;
+  margin-top: -11px;
   margin-bottom: 31px;
   padding: 6px 15px;
   margin-bottom: 28px;
@@ -1033,17 +1044,11 @@ template {
 .stories-item {
   max-width: 322px;
   margin-right: 28px;
-  position: relative;
   cursor: pointer;
 }
 
 .stories-item__text {
-  position: absolute;
   background: #FAFDFF;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  z-index: 10;
 }
 
 .stories-item__image {
@@ -1077,6 +1082,84 @@ template {
   line-height: 22px;
   color: #1565D8;
   text-decoration: none;
+}
+
+.newsletter {
+  background: #1565D8;
+  max-width: 1440px;
+  margin: auto;
+  padding: 99px 0 80px;
+}
+
+.newsletter__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.newsletter__title {
+  color: #ffffff;
+}
+
+.newsletter__text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  max-width: 450px;
+}
+
+.newsletter__button {
+  position: absolute;
+  min-width: 65px;
+  max-width: 177px;
+  right: 5px;
+  top: 3%;
+  bottom: 3%;
+  height: 95%;
+  padding: 11px 27px;
+  background: #183B56;
+  border-radius: 8px;
+  border: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.newsletter__subscribe {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #C3CAD9;
+  width: 447px;
+  height: 56px;
+  margin-right: 63px;
+  margin-top: 41px;
+}
+
+.newsletter__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 47px;
+  padding-right: 200px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.newsletter__icon {
+  position: absolute;
+  top: 23px;
+  z-index: 10;
+  left: 19px;
 }
 
 @media (max-width: 1200px) {
@@ -1116,6 +1199,72 @@ template {
   .tranding__flex_active {
     -ms-grid-columns: 260px  260px 260px;
         grid-template-columns: 260px  260px 260px;
+  }
+  .stories__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .stories__description {
+    max-width: 520px;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 32px;
+  }
+  .stories__label {
+    margin: 0 auto 24px;
+  }
+  .stories__title {
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  .stories__text {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .stories__buttons {
+    margin: auto;
+  }
+  .stories__button {
+    margin: 0 8px 0;
+    width: 60px;
+  }
+  .newsletter__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsletter__title {
+    text-align: center;
+  }
+  .newsletter__text {
+    text-align: center;
+  }
+  .newsletter__subscribe {
+    margin-right: 0;
   }
 }
 
@@ -1262,46 +1411,16 @@ template {
     margin-bottom: 77px;
   }
   .stories__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-bottom: 10px;
   }
-  .stories__description {
-    max-width: 520px;
-    margin-right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 32px;
+  .newsletter {
+    padding: 66px 0 80px;
   }
-  .stories__label {
-    margin: 0 auto 24px;
+  .newsletter__title {
+    margin-top: 4px;
   }
-  .stories__title {
-    text-align: center;
-    margin-bottom: 17px;
-  }
-  .stories__text {
-    text-align: center;
-    margin-bottom: 35px;
-  }
-  .stories__buttons {
-    margin: auto;
-  }
-  .stories__button {
-    margin: 0 8px 0;
-    width: 60px;
+  .newsletter__text {
+    margin-bottom: 12px;
   }
 }
 
@@ -1338,6 +1457,10 @@ template {
   .tranding__flex_active {
     -ms-grid-columns: 260px  260px;
         grid-template-columns: 260px  260px;
+  }
+  .newsletter__title {
+    font-size: 48px;
+    line-height: 60px;
   }
 }
 
@@ -1547,6 +1670,9 @@ template {
   .stories__description {
     margin-bottom: 19px;
   }
+  .stories__slider {
+    margin-bottom: 14px;
+  }
   .stories__slide {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1556,6 +1682,38 @@ template {
   .stories-item__image {
     width: 280px;
     height: 277px;
+  }
+  .newsletter {
+    padding: 60px 0 120px;
+  }
+  .newsletter__container {
+    max-width: 87%;
+  }
+  .newsletter__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+  .newsletter__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .newsletter__button {
+    min-width: 100%;
+    right: 0;
+    top: 57px;
+  }
+  .newsletter__subscribe {
+    width: 280px;
+    margin-top: 26px;
+    height: 48px;
+  }
+  .newsletter__input {
+    padding-right: 10px;
+  }
+  .newsletter__icon {
+    top: 17px;
+    left: 18px;
   }
 }
 
