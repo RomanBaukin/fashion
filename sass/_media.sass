@@ -180,7 +180,14 @@
       margin-bottom: 77px
   .stories
     &__container
-      margin-bottom: 10px
+      max-width: 670px
+      margin-bottom: 13px
+    &-item
+      min-width: 336px
+      margin-right: 10px
+    &__slide
+      max-width: 100%
+      margin-right: 0
   .newsletter
     padding: 66px 0 80px
     &__background
@@ -379,7 +386,7 @@
       max-height: 350px
     &__title
       width: 150px
-      margin-bottom: 19px
+      margin-bottom: 42px
     &__slider
       margin-bottom: 51px
     &__line
@@ -387,6 +394,7 @@
   .stories
     &__container
       max-width: 90%
+      margin-bottom: 24px
     &__this
       display: none
     &__label
@@ -405,9 +413,16 @@
     &__slide
       flex-direction: column
     &-item
+      height: 433px
       &__image
-        width: 280px
+        width: 274px
         height: 277px
+      &__text
+        bottom: -4px
+      &__title
+        font-size: 20px
+        line-height: 24px
+        margin: 0 0 18px
   .newsletter
     padding: 60px 0 120px
     &__container
@@ -481,3 +496,7 @@
     fill: $dark-blue
   .stories__button:hover rect
     stroke: $dark-blue
+  .stories__button:active path
+    fill: #959EAD
+  .stories__button:active rect
+    stroke: #959EAD

@@ -72,6 +72,7 @@ img {
 
 .button {
   outline: none;
+  cursor: pointer;
 }
 
 .label {
@@ -1001,7 +1002,7 @@ template {
 
 .stories__container {
   max-width: 1150px;
-  margin: 0 auto 68px;
+  margin: 0 auto 73px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1040,10 +1041,12 @@ template {
 }
 
 .stories__slider {
-  max-width: 650px;
+  width: 100%;
 }
 
 .stories__slide {
+  width: 100%;
+  margin-right: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1051,12 +1054,20 @@ template {
 
 .stories-item {
   max-width: 322px;
-  margin-right: 28px;
+  height: 475px;
+  margin-right: 24px;
   cursor: pointer;
+  position: relative;
 }
 
 .stories-item__text {
+  width: 100%;
+  padding: 20px 0 20px 20px;
   background: #FAFDFF;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  min-height: 178px;
 }
 
 .stories-item__image {
@@ -1075,6 +1086,7 @@ template {
 
 .stories-item__title {
   max-width: 260px;
+  margin: 0 0 21px;
   font-family: 'HKgrotesk', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1098,6 +1110,7 @@ template {
   margin: auto;
   padding: 99px 0 80px;
   position: relative;
+  overflow: hidden;
 }
 
 .newsletter__background {
@@ -1588,7 +1601,16 @@ template {
     margin-bottom: 77px;
   }
   .stories__container {
-    margin-bottom: 10px;
+    max-width: 670px;
+    margin-bottom: 13px;
+  }
+  .stories-item {
+    min-width: 336px;
+    margin-right: 10px;
+  }
+  .stories__slide {
+    max-width: 100%;
+    margin-right: 0;
   }
   .newsletter {
     padding: 66px 0 80px;
@@ -1866,7 +1888,7 @@ template {
   }
   .comments__title {
     width: 150px;
-    margin-bottom: 19px;
+    margin-bottom: 42px;
   }
   .comments__slider {
     margin-bottom: 51px;
@@ -1876,6 +1898,7 @@ template {
   }
   .stories__container {
     max-width: 90%;
+    margin-bottom: 24px;
   }
   .stories__this {
     display: none;
@@ -1904,9 +1927,20 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .stories-item {
+    height: 433px;
+  }
   .stories-item__image {
-    width: 280px;
+    width: 274px;
     height: 277px;
+  }
+  .stories-item__text {
+    bottom: -4px;
+  }
+  .stories-item__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 18px;
   }
   .newsletter {
     padding: 60px 0 120px;
@@ -2001,6 +2035,12 @@ template {
   }
   .stories__button:hover rect {
     stroke: #183B56;
+  }
+  .stories__button:active path {
+    fill: #959EAD;
+  }
+  .stories__button:active rect {
+    stroke: #959EAD;
   }
 }
 /*# sourceMappingURL=style.css.map */
