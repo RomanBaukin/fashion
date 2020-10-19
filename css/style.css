@@ -32,8 +32,6 @@
   src: url("../fonts/HKGrotesk-Regular.woff") format("woff"), url("../fonts/HKGrotesk-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  -webkit-font-feature-settings: "locl" 0;
-          font-feature-settings: "locl" 0;
   font-display: swap;
 }
 
@@ -42,8 +40,6 @@
   src: url("../fonts/HKGrotesk-Medium.woff") format("woff"), url("../fonts/HKGrotesk-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
-  -webkit-font-feature-settings: "locl" 0;
-          font-feature-settings: "locl" 0;
   font-display: swap;
 }
 
@@ -52,8 +48,6 @@
   src: url("../fonts/HKGrotesk-Bold.woff") format("woff"), url("../fonts/HKGrotesk-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  -webkit-font-feature-settings: "locl" 0;
-          font-feature-settings: "locl" 0;
   font-display: swap;
 }
 
@@ -104,6 +98,8 @@ img {
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   letter-spacing: 0.2px;
   color: #183B56;
   margin: 0;
@@ -656,6 +652,8 @@ template {
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   line-height: 68px;
   letter-spacing: 0.2px;
   color: #183B56;
@@ -721,6 +719,8 @@ template {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #183B56;
@@ -851,6 +851,8 @@ template {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   line-height: 32px;
   letter-spacing: 0.2px;
   color: #183B56;
@@ -926,6 +928,8 @@ template {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   line-height: 32px;
   text-align: center;
   letter-spacing: 0.2px;
@@ -955,6 +959,8 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   line-height: 42px;
   text-align: center;
   color: #183B56;
@@ -966,6 +972,8 @@ template {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.2px;
@@ -1091,6 +1099,8 @@ template {
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   line-height: 32px;
   letter-spacing: 0.2px;
   color: #183B56;
