@@ -126,7 +126,7 @@ img {
 label {
   position: absolute;
   color: red;
-  font-size: 12px;
+  font-size: 10px;
   top: 0;
   left: 5px;
 }
@@ -1122,7 +1122,6 @@ template {
 
 .newsletter {
   background: #1565D8;
-  max-width: 1440px;
   margin: auto;
   padding: 99px 0 80px;
   position: relative;
@@ -1170,9 +1169,8 @@ template {
   min-width: 65px;
   max-width: 177px;
   right: 5px;
-  top: 3%;
-  bottom: 3%;
-  height: 95%;
+  top: 6%;
+  height: 89%;
   padding: 11px 27px;
   background: #183B56;
   border-radius: 8px;
@@ -1207,6 +1205,7 @@ template {
   font-size: 16px;
   line-height: 22px;
   border-radius: 8px;
+  color: #959EAD;
 }
 
 .newsletter__icon {
@@ -1299,10 +1298,10 @@ template {
 
 .modal__dialog {
   position: fixed;
-  top: 30%;
+  top: 50%;
   left: 50%;
   max-width: 478px;
-  padding: 33px 88px;
+  padding: 70px 50px;
   background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1350,6 +1349,7 @@ template {
   line-height: 22px;
   color: #1565D8;
   border-radius: 8px;
+  margin-top: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -2092,6 +2092,12 @@ template {
     color: #b0d2ff;
   }
   .tranding__tab:hover {
+    color: #b0d2ff;
+  }
+  .footer-item__link:hover {
+    color: #b0d2ff;
+  }
+  .about__link:hover {
     color: #b0d2ff;
   }
 }

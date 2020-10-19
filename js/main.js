@@ -66,8 +66,8 @@ $(document).ready(function () {
           minlength: "The name must be at least two letters",
         },
         email: {
-          required: "Please enter your email address",
-          email: "Format email address: name@domain.com",
+          required: "Пожалуйста, введите вашу электронную почту",
+          email: "Формат электронной почты: name@domain.com",
         },
       },
     });
@@ -88,7 +88,7 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay_visible");
     modalDialog.addClass("modal__dialog_visible");
-    document.querySelector(".navbar-mobile__visible").classList.remove("navbar-mobile__visible");
+    $(".navbar-mobile__visible").removeClass("navbar-mobile__visible");
   }
 
   function closeModal(event) {
