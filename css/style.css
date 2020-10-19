@@ -1113,11 +1113,11 @@ template {
 }
 
 .swiper-button-disabled path {
-  fill: #5A7184;
+  fill: #959EAD;
 }
 
 .swiper-button-disabled rect {
-  stroke: #5A7184;
+  stroke: #959EAD;
 }
 
 .newsletter {
