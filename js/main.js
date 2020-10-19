@@ -48,7 +48,7 @@ $(document).ready(function () {
     },
   })
   var storiesSlider = new Swiper('.stories__slider', {
-    loop: true,
+    loop: false,
 
     // Navigation arrows
     navigation: {

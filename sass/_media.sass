@@ -27,6 +27,7 @@
         grid-template-columns: 260px  260px 260px
   .stories
     &__container
+      max-width: 850px
       flex-direction: column
       justify-content: center
       align-items: center
@@ -50,6 +51,10 @@
     &__button
       margin: 0 8px 0
       width: 60px
+    &__slider
+      width: 80%
+    &__slide
+      margin-right: 10px
   .newsletter
     &__wrapper
       flex-direction: column
@@ -185,6 +190,8 @@
     &-item
       min-width: 336px
       margin-right: 10px
+    &__slider
+      width: 100%
     &__slide
       max-width: 100%
       margin-right: 0
@@ -237,6 +244,49 @@
     &__flex
       &_active
         grid-template-columns: 260px  260px
+        column-gap: 30px
+  .stories
+    &__container
+      max-width: 90%
+      margin-bottom: 24px
+    &__this
+      display: none
+    &__label
+      margin-bottom: 20px
+    &__text
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 31px
+    &__button
+      margin: 0 7px 0
+      width: 46px
+    &__description
+      margin-bottom: 19px
+    &__slider
+      max-width: 94%
+      margin-bottom: 14px
+    &__slide
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      margin: 0 auto 0
+    &-item
+      min-width: 52%
+      height: 433px
+      margin-right: 0
+      &__image
+        width: 90%
+        height: 277px
+        margin: 0 auto
+      &__text
+        width: 90%
+        bottom: -4px
+        left: 30px
+      &__title
+        font-size: 20px
+        line-height: 24px
+        margin: 0 0 18px
   .newsletter
     &__background
       &_top-left
@@ -392,37 +442,13 @@
     &__line
       margin-bottom: 42px
   .stories
-    &__container
-      max-width: 90%
-      margin-bottom: 24px
-    &__this
-      display: none
-    &__label
-      margin-bottom: 20px
-    &__text
-      font-size: 16px
-      line-height: 28px
-      margin-bottom: 31px
-    &__button
-      margin: 0 7px 0
-      width: 46px
-    &__description
-      margin-bottom: 19px
-    &__slider
-      margin-bottom: 14px
-    &__slide
-      flex-direction: column
     &-item
-      height: 433px
       &__image
-        width: 274px
-        height: 277px
+        width: 100%
       &__text
-        bottom: -4px
-      &__title
-        font-size: 20px
-        line-height: 24px
-        margin: 0 0 18px
+        width: 100%
+        left: 4px
+        bottom: 0
   .newsletter
     padding: 60px 0 120px
     &__container
@@ -475,6 +501,11 @@
       text-align: center
       margin-top: 10px
       margin-bottom: 22px
+  .thanks
+    &__container
+      display: flex
+      flex-direction: column
+      align-items: center
 
 @media (min-width: 992px)
   .button
@@ -492,11 +523,3 @@
     &__tab
       &:hover
         color: #b0d2ff
-  .stories__button:hover path
-    fill: $dark-blue
-  .stories__button:hover rect
-    stroke: $dark-blue
-  .stories__button:active path
-    fill: #959EAD
-  .stories__button:active rect
-    stroke: #959EAD

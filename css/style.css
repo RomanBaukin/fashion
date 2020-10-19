@@ -1104,6 +1104,22 @@ template {
   text-decoration: none;
 }
 
+.stories__button path {
+  fill: #183B56;
+}
+
+.stories__button rect {
+  stroke: #183B56;
+}
+
+.swiper-button-disabled path {
+  fill: #5A7184;
+}
+
+.swiper-button-disabled rect {
+  stroke: #5A7184;
+}
+
 .newsletter {
   background: #1565D8;
   max-width: 1440px;
@@ -1375,6 +1391,7 @@ template {
         grid-template-columns: 260px  260px 260px;
   }
   .stories__container {
+    max-width: 850px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1418,6 +1435,12 @@ template {
   .stories__button {
     margin: 0 8px 0;
     width: 60px;
+  }
+  .stories__slider {
+    width: 80%;
+  }
+  .stories__slide {
+    margin-right: 10px;
   }
   .newsletter__wrapper {
     -webkit-box-orient: vertical;
@@ -1608,6 +1631,9 @@ template {
     min-width: 336px;
     margin-right: 10px;
   }
+  .stories__slider {
+    width: 100%;
+  }
   .stories__slide {
     max-width: 100%;
     margin-right: 0;
@@ -1671,6 +1697,70 @@ template {
   .tranding__flex_active {
     -ms-grid-columns: 260px  260px;
         grid-template-columns: 260px  260px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .stories__container {
+    max-width: 90%;
+    margin-bottom: 24px;
+  }
+  .stories__this {
+    display: none;
+  }
+  .stories__label {
+    margin-bottom: 20px;
+  }
+  .stories__text {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 31px;
+  }
+  .stories__button {
+    margin: 0 7px 0;
+    width: 46px;
+  }
+  .stories__description {
+    margin-bottom: 19px;
+  }
+  .stories__slider {
+    max-width: 94%;
+    margin-bottom: 14px;
+  }
+  .stories__slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 0;
+  }
+  .stories-item {
+    min-width: 52%;
+    height: 433px;
+    margin-right: 0;
+  }
+  .stories-item__image {
+    width: 90%;
+    height: 277px;
+    margin: 0 auto;
+  }
+  .stories-item__text {
+    width: 90%;
+    bottom: -4px;
+    left: 30px;
+  }
+  .stories-item__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 18px;
   }
   .newsletter__background_top-left {
     display: none;
@@ -1896,51 +1986,13 @@ template {
   .comments__line {
     margin-bottom: 42px;
   }
-  .stories__container {
-    max-width: 90%;
-    margin-bottom: 24px;
-  }
-  .stories__this {
-    display: none;
-  }
-  .stories__label {
-    margin-bottom: 20px;
-  }
-  .stories__text {
-    font-size: 16px;
-    line-height: 28px;
-    margin-bottom: 31px;
-  }
-  .stories__button {
-    margin: 0 7px 0;
-    width: 46px;
-  }
-  .stories__description {
-    margin-bottom: 19px;
-  }
-  .stories__slider {
-    margin-bottom: 14px;
-  }
-  .stories__slide {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .stories-item {
-    height: 433px;
-  }
   .stories-item__image {
-    width: 274px;
-    height: 277px;
+    width: 100%;
   }
   .stories-item__text {
-    bottom: -4px;
-  }
-  .stories-item__title {
-    font-size: 20px;
-    line-height: 24px;
-    margin: 0 0 18px;
+    width: 100%;
+    left: 4px;
+    bottom: 0;
   }
   .newsletter {
     padding: 60px 0 120px;
@@ -2015,6 +2067,18 @@ template {
     margin-top: 10px;
     margin-bottom: 22px;
   }
+  .thanks__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2029,18 +2093,6 @@ template {
   }
   .tranding__tab:hover {
     color: #b0d2ff;
-  }
-  .stories__button:hover path {
-    fill: #183B56;
-  }
-  .stories__button:hover rect {
-    stroke: #183B56;
-  }
-  .stories__button:active path {
-    fill: #959EAD;
-  }
-  .stories__button:active rect {
-    stroke: #959EAD;
   }
 }
 /*# sourceMappingURL=style.css.map */
