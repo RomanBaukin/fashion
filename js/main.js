@@ -18,12 +18,15 @@ $(document).ready(function () {
 
   tabsItem.on('click', function (event) {
     var activeContent = $(this).attr("data-target");
-    tabsItem.removeClass('tranding__tab_active')
+    if ($(this)!=(".tranding__tab_active")){
     contentItem.removeClass('tranding__flex_active');
+    } 
+    tabsItem.removeClass('tranding__tab_active')
     $(activeContent).addClass('tranding__flex_active');
     $(this).addClass('tranding__tab_active');
   })
 
+  
   // Слайдер
   var commentsSlider = new Swiper('.comments__slider', {
     loop: true,
