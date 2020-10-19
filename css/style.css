@@ -1217,7 +1217,7 @@ template {
 
 .footer {
   padding-top: 128px;
-  padding-bottom: 140px;
+  padding-bottom: 108px;
 }
 
 .footer__grid {
@@ -1275,6 +1275,10 @@ template {
 
 .about__link {
   margin-right: 5px;
+}
+
+.about__icon {
+  border: 2px solid transparent;
 }
 
 .modal__overlay {
@@ -2097,8 +2101,11 @@ template {
   .footer-item__link:hover {
     color: #b0d2ff;
   }
-  .about__link:hover {
-    color: #b0d2ff;
+  .about__icon:hover {
+    border: 2px solid #b0d2ff;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 /*# sourceMappingURL=style.css.map */
