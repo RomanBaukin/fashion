@@ -665,9 +665,11 @@
         <a href="#" class="modal__close">
           <img src="img/svg/close.svg" alt="Icon: close" />
         </a>
-        <input type="text" class="modal__input" placeholder="Логин">
-        <input type="text" class="modal__input" placeholder="Пароль">
-        <button class="button modal__button">Войти</button> 
+        <form class="form">
+        	<input type="text" class="modal__input modal__input_login" name="name" placeholder="Логин" required minlength="2">
+        	<input type="password" class="modal__input modal__input_password" name="password" placeholder="Пароль" required minlength="5">
+        	<button class="button modal__button">Войти</button>
+        </form> 
       </div>
       <!-- /.modal__dialog -->
     </div>

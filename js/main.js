@@ -34,6 +34,7 @@ $(document).ready(function () {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true
     },
     autoplay: {
       delay: 7000,
@@ -65,12 +66,16 @@ $(document).ready(function () {
     $(this).validate({
       messages: {
         name: {
-          required: "Please specify your name",
-          minlength: "The name must be at least two letters",
+          required: "Введите ваш Логин",
+          minlength: "Не менее 2-х символов",
         },
         email: {
           required: "Пожалуйста, введите вашу электронную почту",
           email: "Формат электронной почты: name@domain.com",
+        },
+        password: {
+          required: "Введите ваш пароль",
+          minlength: "Не менее 5 символов",
         },
       },
     });
