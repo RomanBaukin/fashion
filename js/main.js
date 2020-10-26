@@ -37,7 +37,7 @@ $(document).ready(function () {
       clickable: true
     },
     autoplay: {
-      delay: 7000,
+      delay: 4000,
     },
     on: {
       init() {
