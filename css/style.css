@@ -1933,6 +1933,10 @@ template {
   .collections__image {
     border-radius: 3px;
   }
+  .collections__button {
+    display: block;
+    text-align: center;
+  }
   .tranding__container {
     max-width: 90%;
     margin-bottom: 54px;
